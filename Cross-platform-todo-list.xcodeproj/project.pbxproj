@@ -14,9 +14,77 @@
 		281F50171EC232BE000EC1E2 /* Cross_platform_todo_list.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 281F50151EC232BE000EC1E2 /* Cross_platform_todo_list.xcdatamodeld */; };
 		281F50191EC232BE000EC1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281F50181EC232BE000EC1E2 /* Assets.xcassets */; };
 		281F501C1EC232BE000EC1E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281F501A1EC232BE000EC1E2 /* LaunchScreen.storyboard */; };
+		281F50291EC233B8000EC1E2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281F50271EC233B8000EC1E2 /* Interface.storyboard */; };
+		281F502B1EC233B8000EC1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281F502A1EC233B8000EC1E2 /* Assets.xcassets */; };
+		281F50321EC233B9000EC1E2 /* WatchKit-todo-list Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 281F50311EC233B8000EC1E2 /* WatchKit-todo-list Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		281F50381EC233B9000EC1E2 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50371EC233B9000EC1E2 /* InterfaceController.m */; };
+		281F503B1EC233B9000EC1E2 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F503A1EC233B9000EC1E2 /* ExtensionDelegate.m */; };
+		281F503D1EC233B9000EC1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281F503C1EC233B9000EC1E2 /* Assets.xcassets */; };
+		281F50411EC233B9000EC1E2 /* WatchKit-todo-list.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 281F50251EC233B8000EC1E2 /* WatchKit-todo-list.app */; };
+		281F504C1EC23F3D000EC1E2 /* TodoRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F504B1EC23F3D000EC1E2 /* TodoRowController.m */; };
+		281F50551EC246C2000EC1E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50541EC246C2000EC1E2 /* main.m */; };
+		281F50581EC246C2000EC1E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50571EC246C2000EC1E2 /* AppDelegate.m */; };
+		281F505E1EC246C2000EC1E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281F505C1EC246C2000EC1E2 /* Main.storyboard */; };
+		281F50601EC246C2000EC1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281F505F1EC246C2000EC1E2 /* Assets.xcassets */; };
+		281F50671EC248BA000EC1E2 /* TVHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50661EC248BA000EC1E2 /* TVHomeViewController.m */; };
+		281F50691EC2E3C9000EC1E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 281F50681EC2E3C9000EC1E2 /* GoogleService-Info.plist */; };
+		281F506D1EC38439000EC1E2 /* FirebaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F506C1EC38439000EC1E2 /* FirebaseAPI.m */; };
+		281F50701EC3C43A000EC1E2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F506F1EC3C43A000EC1E2 /* LoginViewController.m */; };
+		281F50731EC3EF71000EC1E2 /* NewTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50721EC3EF71000EC1E2 /* NewTodoViewController.m */; };
+		281FED291EC440B300F5D5D4 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 281FED281EC440B300F5D5D4 /* Todo.m */; };
+		281FED2C1EC44C2200F5D5D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50101EC232BE000EC1E2 /* ViewController.m */; };
+		6CD59B818D6B7B688B23FE9F /* libPods-Cross-platform-todo-list.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB693AD8DF01695E59ADA98 /* libPods-Cross-platform-todo-list.a */; };
+		767015D57A7BE025E9408CC6 /* libPods-WatchKit-todo-list Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 293AF20FAFABE73714985113 /* libPods-WatchKit-todo-list Extension.a */; };
+		81D7458D44408CCE5011D8E6 /* libPods-TV-todo-list.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F96140BC3B558B1B0BDC5BD /* libPods-TV-todo-list.a */; };
+		DA4FCBBAA52D673FF17F1962 /* libPods-WatchKit-todo-list.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B7E894B3565D18760713B3 /* libPods-WatchKit-todo-list.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		281F50331EC233B9000EC1E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 281F4FFE1EC232BE000EC1E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 281F50301EC233B8000EC1E2;
+			remoteInfo = "WatchKit-todo-list Extension";
+		};
+		281F503F1EC233B9000EC1E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 281F4FFE1EC232BE000EC1E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 281F50241EC233B8000EC1E2;
+			remoteInfo = "WatchKit-todo-list";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		281F50451EC233B9000EC1E2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				281F50321EC233B9000EC1E2 /* WatchKit-todo-list Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281F50491EC233B9000EC1E2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				281F50411EC233B9000EC1E2 /* WatchKit-todo-list.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0E0A8878B9D1F088DAFDD2A7 /* Pods-Cross-platform-todo-list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cross-platform-todo-list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cross-platform-todo-list/Pods-Cross-platform-todo-list.debug.xcconfig"; sourceTree = "<group>"; };
+		10739AD619D6BADB3934BDD3 /* Pods-WatchKit-todo-list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKit-todo-list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKit-todo-list/Pods-WatchKit-todo-list.debug.xcconfig"; sourceTree = "<group>"; };
+		13B7E894B3565D18760713B3 /* libPods-WatchKit-todo-list.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchKit-todo-list.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		281F50061EC232BE000EC1E2 /* Cross-platform-todo-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cross-platform-todo-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		281F500A1EC232BE000EC1E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		281F500C1EC232BE000EC1E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +96,47 @@
 		281F50181EC232BE000EC1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		281F501B1EC232BE000EC1E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		281F501D1EC232BE000EC1E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281F50251EC233B8000EC1E2 /* WatchKit-todo-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchKit-todo-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		281F50281EC233B8000EC1E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		281F502A1EC233B8000EC1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		281F502C1EC233B8000EC1E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281F50311EC233B8000EC1E2 /* WatchKit-todo-list Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKit-todo-list Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		281F50361EC233B9000EC1E2 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		281F50371EC233B9000EC1E2 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		281F50391EC233B9000EC1E2 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		281F503A1EC233B9000EC1E2 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		281F503C1EC233B9000EC1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		281F503E1EC233B9000EC1E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281F504A1EC23F3D000EC1E2 /* TodoRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoRowController.h; sourceTree = "<group>"; };
+		281F504B1EC23F3D000EC1E2 /* TodoRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoRowController.m; sourceTree = "<group>"; };
+		281F50511EC246C2000EC1E2 /* TV-todo-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV-todo-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		281F50541EC246C2000EC1E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		281F50561EC246C2000EC1E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		281F50571EC246C2000EC1E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		281F505D1EC246C2000EC1E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		281F505F1EC246C2000EC1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		281F50611EC246C2000EC1E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281F50651EC248BA000EC1E2 /* TVHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHomeViewController.h; sourceTree = "<group>"; };
+		281F50661EC248BA000EC1E2 /* TVHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVHomeViewController.m; sourceTree = "<group>"; };
+		281F50681EC2E3C9000EC1E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		281F506A1EC3832D000EC1E2 /* Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
+		281F506B1EC38439000EC1E2 /* FirebaseAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseAPI.h; sourceTree = "<group>"; };
+		281F506C1EC38439000EC1E2 /* FirebaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirebaseAPI.m; sourceTree = "<group>"; };
+		281F506E1EC3C43A000EC1E2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		281F506F1EC3C43A000EC1E2 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		281F50711EC3EF71000EC1E2 /* NewTodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTodoViewController.h; sourceTree = "<group>"; };
+		281F50721EC3EF71000EC1E2 /* NewTodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTodoViewController.m; sourceTree = "<group>"; };
+		281FED271EC440B300F5D5D4 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		281FED281EC440B300F5D5D4 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		293AF20FAFABE73714985113 /* libPods-WatchKit-todo-list Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchKit-todo-list Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44478CD3C75CDD73C6D490C3 /* Pods-TV-todo-list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV-todo-list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TV-todo-list/Pods-TV-todo-list.debug.xcconfig"; sourceTree = "<group>"; };
+		69745AE9CA9F7E9DDFA2BD1B /* Pods-WatchKit-todo-list Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKit-todo-list Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKit-todo-list Extension/Pods-WatchKit-todo-list Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		7F96140BC3B558B1B0BDC5BD /* libPods-TV-todo-list.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TV-todo-list.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CEF030DC619D1AE39DFD70 /* Pods-WatchKit-todo-list Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKit-todo-list Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKit-todo-list Extension/Pods-WatchKit-todo-list Extension.release.xcconfig"; sourceTree = "<group>"; };
+		E275A39E42E1C40251E1083B /* Pods-WatchKit-todo-list.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKit-todo-list.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKit-todo-list/Pods-WatchKit-todo-list.release.xcconfig"; sourceTree = "<group>"; };
+		E6A88D70A2DAF2D9F2E2D644 /* Pods-TV-todo-list.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV-todo-list.release.xcconfig"; path = "Pods/Target Support Files/Pods-TV-todo-list/Pods-TV-todo-list.release.xcconfig"; sourceTree = "<group>"; };
+		EDB693AD8DF01695E59ADA98 /* libPods-Cross-platform-todo-list.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cross-platform-todo-list.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF5C373E4CC9FAE1F7336D8 /* Pods-Cross-platform-todo-list.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cross-platform-todo-list.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cross-platform-todo-list/Pods-Cross-platform-todo-list.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +144,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD59B818D6B7B688B23FE9F /* libPods-Cross-platform-todo-list.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281F502E1EC233B8000EC1E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767015D57A7BE025E9408CC6 /* libPods-WatchKit-todo-list Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281F504E1EC246C2000EC1E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D7458D44408CCE5011D8E6 /* libPods-TV-todo-list.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED09E99985FCE899C36DE301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4FCBBAA52D673FF17F1962 /* libPods-WatchKit-todo-list.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +179,12 @@
 			isa = PBXGroup;
 			children = (
 				281F50081EC232BE000EC1E2 /* Cross-platform-todo-list */,
+				281F50261EC233B8000EC1E2 /* WatchKit-todo-list */,
+				281F50351EC233B9000EC1E2 /* WatchKit-todo-list Extension */,
+				281F50521EC246C2000EC1E2 /* TV-todo-list */,
 				281F50071EC232BE000EC1E2 /* Products */,
+				A37A9A9F59AB61B5608FCC11 /* Pods */,
+				5FA5E450417CC754E0ADD4D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				281F50061EC232BE000EC1E2 /* Cross-platform-todo-list.app */,
+				281F50251EC233B8000EC1E2 /* WatchKit-todo-list.app */,
+				281F50311EC233B8000EC1E2 /* WatchKit-todo-list Extension.appex */,
+				281F50511EC246C2000EC1E2 /* TV-todo-list.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,15 +202,9 @@
 		281F50081EC232BE000EC1E2 /* Cross-platform-todo-list */ = {
 			isa = PBXGroup;
 			children = (
-				281F500C1EC232BE000EC1E2 /* AppDelegate.h */,
-				281F500D1EC232BE000EC1E2 /* AppDelegate.m */,
-				281F500F1EC232BE000EC1E2 /* ViewController.h */,
-				281F50101EC232BE000EC1E2 /* ViewController.m */,
-				281F50121EC232BE000EC1E2 /* Main.storyboard */,
-				281F50181EC232BE000EC1E2 /* Assets.xcassets */,
-				281F501A1EC232BE000EC1E2 /* LaunchScreen.storyboard */,
-				281F501D1EC232BE000EC1E2 /* Info.plist */,
-				281F50151EC232BE000EC1E2 /* Cross_platform_todo_list.xcdatamodeld */,
+				281F50751EC3EF91000EC1E2 /* Model */,
+				281F50741EC3EF7E000EC1E2 /* Controller */,
+				281F50761EC3EF98000EC1E2 /* View */,
 				281F50091EC232BE000EC1E2 /* Supporting Files */,
 			);
 			path = "Cross-platform-todo-list";
@@ -82,6 +218,120 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		281F50261EC233B8000EC1E2 /* WatchKit-todo-list */ = {
+			isa = PBXGroup;
+			children = (
+				281F50271EC233B8000EC1E2 /* Interface.storyboard */,
+				281F502A1EC233B8000EC1E2 /* Assets.xcassets */,
+				281F502C1EC233B8000EC1E2 /* Info.plist */,
+			);
+			path = "WatchKit-todo-list";
+			sourceTree = "<group>";
+		};
+		281F50351EC233B9000EC1E2 /* WatchKit-todo-list Extension */ = {
+			isa = PBXGroup;
+			children = (
+				281F504A1EC23F3D000EC1E2 /* TodoRowController.h */,
+				281F504B1EC23F3D000EC1E2 /* TodoRowController.m */,
+				281F50361EC233B9000EC1E2 /* InterfaceController.h */,
+				281F50371EC233B9000EC1E2 /* InterfaceController.m */,
+				281F50391EC233B9000EC1E2 /* ExtensionDelegate.h */,
+				281F503A1EC233B9000EC1E2 /* ExtensionDelegate.m */,
+				281F503C1EC233B9000EC1E2 /* Assets.xcassets */,
+				281F503E1EC233B9000EC1E2 /* Info.plist */,
+			);
+			path = "WatchKit-todo-list Extension";
+			sourceTree = "<group>";
+		};
+		281F50521EC246C2000EC1E2 /* TV-todo-list */ = {
+			isa = PBXGroup;
+			children = (
+				281F50561EC246C2000EC1E2 /* AppDelegate.h */,
+				281F50571EC246C2000EC1E2 /* AppDelegate.m */,
+				281F505C1EC246C2000EC1E2 /* Main.storyboard */,
+				281F50651EC248BA000EC1E2 /* TVHomeViewController.h */,
+				281F50661EC248BA000EC1E2 /* TVHomeViewController.m */,
+				281F506A1EC3832D000EC1E2 /* Credentials.h */,
+				281F506B1EC38439000EC1E2 /* FirebaseAPI.h */,
+				281F506C1EC38439000EC1E2 /* FirebaseAPI.m */,
+				281F505F1EC246C2000EC1E2 /* Assets.xcassets */,
+				281F50611EC246C2000EC1E2 /* Info.plist */,
+				281F50531EC246C2000EC1E2 /* Supporting Files */,
+			);
+			path = "TV-todo-list";
+			sourceTree = "<group>";
+		};
+		281F50531EC246C2000EC1E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				281F50541EC246C2000EC1E2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		281F50741EC3EF7E000EC1E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				281F500F1EC232BE000EC1E2 /* ViewController.h */,
+				281F50101EC232BE000EC1E2 /* ViewController.m */,
+				281F50711EC3EF71000EC1E2 /* NewTodoViewController.h */,
+				281F50721EC3EF71000EC1E2 /* NewTodoViewController.m */,
+				281F506E1EC3C43A000EC1E2 /* LoginViewController.h */,
+				281F506F1EC3C43A000EC1E2 /* LoginViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		281F50751EC3EF91000EC1E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				281FED271EC440B300F5D5D4 /* Todo.h */,
+				281FED281EC440B300F5D5D4 /* Todo.m */,
+				281F500C1EC232BE000EC1E2 /* AppDelegate.h */,
+				281F500D1EC232BE000EC1E2 /* AppDelegate.m */,
+				281F50181EC232BE000EC1E2 /* Assets.xcassets */,
+				281F501D1EC232BE000EC1E2 /* Info.plist */,
+				281F50681EC2E3C9000EC1E2 /* GoogleService-Info.plist */,
+				281F50151EC232BE000EC1E2 /* Cross_platform_todo_list.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		281F50761EC3EF98000EC1E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				281F50121EC232BE000EC1E2 /* Main.storyboard */,
+				281F501A1EC232BE000EC1E2 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FA5E450417CC754E0ADD4D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDB693AD8DF01695E59ADA98 /* libPods-Cross-platform-todo-list.a */,
+				7F96140BC3B558B1B0BDC5BD /* libPods-TV-todo-list.a */,
+				13B7E894B3565D18760713B3 /* libPods-WatchKit-todo-list.a */,
+				293AF20FAFABE73714985113 /* libPods-WatchKit-todo-list Extension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A37A9A9F59AB61B5608FCC11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E0A8878B9D1F088DAFDD2A7 /* Pods-Cross-platform-todo-list.debug.xcconfig */,
+				FCF5C373E4CC9FAE1F7336D8 /* Pods-Cross-platform-todo-list.release.xcconfig */,
+				44478CD3C75CDD73C6D490C3 /* Pods-TV-todo-list.debug.xcconfig */,
+				E6A88D70A2DAF2D9F2E2D644 /* Pods-TV-todo-list.release.xcconfig */,
+				10739AD619D6BADB3934BDD3 /* Pods-WatchKit-todo-list.debug.xcconfig */,
+				E275A39E42E1C40251E1083B /* Pods-WatchKit-todo-list.release.xcconfig */,
+				69745AE9CA9F7E9DDFA2BD1B /* Pods-WatchKit-todo-list Extension.debug.xcconfig */,
+				C0CEF030DC619D1AE39DFD70 /* Pods-WatchKit-todo-list Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,17 +339,82 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 281F50201EC232BE000EC1E2 /* Build configuration list for PBXNativeTarget "Cross-platform-todo-list" */;
 			buildPhases = (
+				651F4AA4CA9EE70F857418D7 /* [CP] Check Pods Manifest.lock */,
 				281F50021EC232BE000EC1E2 /* Sources */,
 				281F50031EC232BE000EC1E2 /* Frameworks */,
 				281F50041EC232BE000EC1E2 /* Resources */,
+				281F50491EC233B9000EC1E2 /* Embed Watch Content */,
+				DE04A21CFCC486043B87A259 /* [CP] Embed Pods Frameworks */,
+				BC1AFF182DED3D7B701EA972 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				281F50401EC233B9000EC1E2 /* PBXTargetDependency */,
+			);
+			name = "Cross-platform-todo-list";
+			productName = "Cross-platform-todo-list";
+			productReference = 281F50061EC232BE000EC1E2 /* Cross-platform-todo-list.app */;
+			productType = "com.apple.product-type.application";
+		};
+		281F50241EC233B8000EC1E2 /* WatchKit-todo-list */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281F50461EC233B9000EC1E2 /* Build configuration list for PBXNativeTarget "WatchKit-todo-list" */;
+			buildPhases = (
+				501BEC3B287F0E5F07207B84 /* [CP] Check Pods Manifest.lock */,
+				281F50231EC233B8000EC1E2 /* Resources */,
+				281F50451EC233B9000EC1E2 /* Embed App Extensions */,
+				ED09E99985FCE899C36DE301 /* Frameworks */,
+				AA9D2DA57E5B03ED3D22FF60 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				281F50341EC233B9000EC1E2 /* PBXTargetDependency */,
+			);
+			name = "WatchKit-todo-list";
+			productName = "WatchKit-todo-list";
+			productReference = 281F50251EC233B8000EC1E2 /* WatchKit-todo-list.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		281F50301EC233B8000EC1E2 /* WatchKit-todo-list Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281F50421EC233B9000EC1E2 /* Build configuration list for PBXNativeTarget "WatchKit-todo-list Extension" */;
+			buildPhases = (
+				B926714C04946B0F44725662 /* [CP] Check Pods Manifest.lock */,
+				281F502D1EC233B8000EC1E2 /* Sources */,
+				281F502E1EC233B8000EC1E2 /* Frameworks */,
+				281F502F1EC233B8000EC1E2 /* Resources */,
+				873E72B06633214D81F714CC /* [CP] Embed Pods Frameworks */,
+				DECBBEEDB1552BD34253A0C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Cross-platform-todo-list";
-			productName = "Cross-platform-todo-list";
-			productReference = 281F50061EC232BE000EC1E2 /* Cross-platform-todo-list.app */;
+			name = "WatchKit-todo-list Extension";
+			productName = "WatchKit-todo-list Extension";
+			productReference = 281F50311EC233B8000EC1E2 /* WatchKit-todo-list Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		281F50501EC246C2000EC1E2 /* TV-todo-list */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281F50621EC246C2000EC1E2 /* Build configuration list for PBXNativeTarget "TV-todo-list" */;
+			buildPhases = (
+				BF835CA1A17C6D1753ED249C /* [CP] Check Pods Manifest.lock */,
+				281F504D1EC246C2000EC1E2 /* Sources */,
+				281F504E1EC246C2000EC1E2 /* Frameworks */,
+				281F504F1EC246C2000EC1E2 /* Resources */,
+				5D5152770B422711D767A88B /* [CP] Embed Pods Frameworks */,
+				313428D8AC72F0F91A9DD9FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TV-todo-list";
+			productName = "TV-todo-list";
+			productReference = 281F50511EC246C2000EC1E2 /* TV-todo-list.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,6 +427,21 @@
 				ORGANIZATIONNAME = "Jay Balderas";
 				TargetAttributes = {
 					281F50051EC232BE000EC1E2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5EB567WJ73;
+						ProvisioningStyle = Automatic;
+					};
+					281F50241EC233B8000EC1E2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5EB567WJ73;
+						ProvisioningStyle = Automatic;
+					};
+					281F50301EC233B8000EC1E2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5EB567WJ73;
+						ProvisioningStyle = Automatic;
+					};
+					281F50501EC246C2000EC1E2 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5EB567WJ73;
 						ProvisioningStyle = Automatic;
@@ -132,6 +462,9 @@
 			projectRoot = "";
 			targets = (
 				281F50051EC232BE000EC1E2 /* Cross-platform-todo-list */,
+				281F50241EC233B8000EC1E2 /* WatchKit-todo-list */,
+				281F50301EC233B8000EC1E2 /* WatchKit-todo-list Extension */,
+				281F50501EC246C2000EC1E2 /* TV-todo-list */,
 			);
 		};
 /* End PBXProject section */
@@ -142,12 +475,207 @@
 			buildActionMask = 2147483647;
 			files = (
 				281F501C1EC232BE000EC1E2 /* LaunchScreen.storyboard in Resources */,
+				281F50691EC2E3C9000EC1E2 /* GoogleService-Info.plist in Resources */,
 				281F50191EC232BE000EC1E2 /* Assets.xcassets in Resources */,
 				281F50141EC232BE000EC1E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		281F50231EC233B8000EC1E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281F502B1EC233B8000EC1E2 /* Assets.xcassets in Resources */,
+				281F50291EC233B8000EC1E2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281F502F1EC233B8000EC1E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281F503D1EC233B9000EC1E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281F504F1EC246C2000EC1E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281F50601EC246C2000EC1E2 /* Assets.xcassets in Resources */,
+				281F505E1EC246C2000EC1E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		313428D8AC72F0F91A9DD9FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TV-todo-list/Pods-TV-todo-list-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		501BEC3B287F0E5F07207B84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D5152770B422711D767A88B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TV-todo-list/Pods-TV-todo-list-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		651F4AA4CA9EE70F857418D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		873E72B06633214D81F714CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKit-todo-list Extension/Pods-WatchKit-todo-list Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA9D2DA57E5B03ED3D22FF60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKit-todo-list/Pods-WatchKit-todo-list-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B926714C04946B0F44725662 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC1AFF182DED3D7B701EA972 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cross-platform-todo-list/Pods-Cross-platform-todo-list-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF835CA1A17C6D1753ED249C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE04A21CFCC486043B87A259 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cross-platform-todo-list/Pods-Cross-platform-todo-list-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DECBBEEDB1552BD34253A0C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchKit-todo-list Extension/Pods-WatchKit-todo-list Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		281F50021EC232BE000EC1E2 /* Sources */ = {
@@ -158,10 +686,48 @@
 				281F500E1EC232BE000EC1E2 /* AppDelegate.m in Sources */,
 				281F500B1EC232BE000EC1E2 /* main.m in Sources */,
 				281F50171EC232BE000EC1E2 /* Cross_platform_todo_list.xcdatamodeld in Sources */,
+				281F50701EC3C43A000EC1E2 /* LoginViewController.m in Sources */,
+				281F50731EC3EF71000EC1E2 /* NewTodoViewController.m in Sources */,
+				281FED291EC440B300F5D5D4 /* Todo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281F502D1EC233B8000EC1E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281F503B1EC233B9000EC1E2 /* ExtensionDelegate.m in Sources */,
+				281F50381EC233B9000EC1E2 /* InterfaceController.m in Sources */,
+				281FED2C1EC44C2200F5D5D4 /* ViewController.m in Sources */,
+				281F504C1EC23F3D000EC1E2 /* TodoRowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281F504D1EC246C2000EC1E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281F50581EC246C2000EC1E2 /* AppDelegate.m in Sources */,
+				281F50551EC246C2000EC1E2 /* main.m in Sources */,
+				281F50671EC248BA000EC1E2 /* TVHomeViewController.m in Sources */,
+				281F506D1EC38439000EC1E2 /* FirebaseAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		281F50341EC233B9000EC1E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 281F50301EC233B8000EC1E2 /* WatchKit-todo-list Extension */;
+			targetProxy = 281F50331EC233B9000EC1E2 /* PBXContainerItemProxy */;
+		};
+		281F50401EC233B9000EC1E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 281F50241EC233B8000EC1E2 /* WatchKit-todo-list */;
+			targetProxy = 281F503F1EC233B9000EC1E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		281F50121EC232BE000EC1E2 /* Main.storyboard */ = {
@@ -178,6 +744,22 @@
 				281F501B1EC232BE000EC1E2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		281F50271EC233B8000EC1E2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				281F50281EC233B8000EC1E2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		281F505C1EC246C2000EC1E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				281F505D1EC246C2000EC1E2 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -277,6 +859,7 @@
 		};
 		281F50211EC232BE000EC1E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0A8878B9D1F088DAFDD2A7 /* Pods-Cross-platform-todo-list.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5EB567WJ73;
@@ -289,6 +872,7 @@
 		};
 		281F50221EC232BE000EC1E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF5C373E4CC9FAE1F7336D8 /* Pods-Cross-platform-todo-list.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5EB567WJ73;
@@ -296,6 +880,108 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Balderas.Cross-platform-todo-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		281F50431EC233B9000EC1E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69745AE9CA9F7E9DDFA2BD1B /* Pods-WatchKit-todo-list Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 5EB567WJ73;
+				INFOPLIST_FILE = "WatchKit-todo-list Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Balderas.Cross-platform-todo-list.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		281F50441EC233B9000EC1E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0CEF030DC619D1AE39DFD70 /* Pods-WatchKit-todo-list Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 5EB567WJ73;
+				INFOPLIST_FILE = "WatchKit-todo-list Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Balderas.Cross-platform-todo-list.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		281F50471EC233B9000EC1E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10739AD619D6BADB3934BDD3 /* Pods-WatchKit-todo-list.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5EB567WJ73;
+				IBSC_MODULE = WatchKit_todo_list_Extension;
+				INFOPLIST_FILE = "WatchKit-todo-list/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Balderas.Cross-platform-todo-list.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		281F50481EC233B9000EC1E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E275A39E42E1C40251E1083B /* Pods-WatchKit-todo-list.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5EB567WJ73;
+				IBSC_MODULE = WatchKit_todo_list_Extension;
+				INFOPLIST_FILE = "WatchKit-todo-list/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Balderas.Cross-platform-todo-list.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		281F50631EC246C2000EC1E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44478CD3C75CDD73C6D490C3 /* Pods-TV-todo-list.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 5EB567WJ73;
+				INFOPLIST_FILE = "TV-todo-list/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Balderas.TV-todo-list";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		281F50641EC246C2000EC1E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A88D70A2DAF2D9F2E2D644 /* Pods-TV-todo-list.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 5EB567WJ73;
+				INFOPLIST_FILE = "TV-todo-list/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Balderas.TV-todo-list";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
@@ -318,6 +1004,34 @@
 				281F50221EC232BE000EC1E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281F50421EC233B9000EC1E2 /* Build configuration list for PBXNativeTarget "WatchKit-todo-list Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281F50431EC233B9000EC1E2 /* Debug */,
+				281F50441EC233B9000EC1E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281F50461EC233B9000EC1E2 /* Build configuration list for PBXNativeTarget "WatchKit-todo-list" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281F50471EC233B9000EC1E2 /* Debug */,
+				281F50481EC233B9000EC1E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281F50621EC246C2000EC1E2 /* Build configuration list for PBXNativeTarget "TV-todo-list" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281F50631EC246C2000EC1E2 /* Debug */,
+				281F50641EC246C2000EC1E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

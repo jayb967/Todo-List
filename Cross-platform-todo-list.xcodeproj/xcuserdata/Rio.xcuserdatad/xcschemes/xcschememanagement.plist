@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TV-todo-list.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>WatchKit-todo-list.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>281F50051EC232BE000EC1E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>281F50241EC233B8000EC1E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>281F50501EC246C2000EC1E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
