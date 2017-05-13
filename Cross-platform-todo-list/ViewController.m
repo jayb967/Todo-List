@@ -10,6 +10,7 @@
 #import "LoginViewController.h"
 #import "Todo.h"
 #import "TodoTableViewCell.h"
+#import "NewTodoViewController.h"
 @import FirebaseAuth;
 
 @import Firebase;
@@ -39,12 +40,6 @@
     [self checkUserStatus];
     
 }
-
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-//    [super prepareForSegue:segue sender:sender];
-//    
-//    NSLog(@"%@", segue.destinationViewController);
-//}
 
 -(void)checkUserStatus{
     if (![[FIRAuth auth] currentUser]) {
@@ -83,6 +78,18 @@
             [self.allTodos addObject:currentTodo];
         }
         [self.todoTableView reloadData];
+    }];
+}
+
+- (IBAction)addTodoButtonPressed:(UIBarButtonItem *)sender {
+    if (self.topConstraint.constant == -150) {
+        self.topConstraint.constant = 0;
+    } else {
+        self.topConstraint.constant = -150;
+    }
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.view layoutIfNeeded];
     }];
 }
 

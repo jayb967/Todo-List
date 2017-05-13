@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LiS-CM-1fS">
-                                <rect key="frame" x="0.0" y="64" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="-86" width="375" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="vTh-Yi-hox"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 </connections>
                             </containerView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O5Q-7b-s0s">
-                                <rect key="frame" x="-0.5" y="214" width="375" height="453"/>
+                                <rect key="frame" x="-0.5" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="63" id="A6C-Jb-Xas" customClass="TodoTableViewCell">
@@ -74,16 +74,23 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="LiS-CM-1fS" secondAttribute="trailing" id="3Db-el-iXb"/>
                             <constraint firstItem="LiS-CM-1fS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6ES-ZD-uWd"/>
+                            <constraint firstItem="LiS-CM-1fS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-150" id="IIo-N6-7GS"/>
                             <constraint firstItem="O5Q-7b-s0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SpG-lL-MRt"/>
                             <constraint firstItem="O5Q-7b-s0s" firstAttribute="top" secondItem="LiS-CM-1fS" secondAttribute="bottom" id="Tan-MF-rE5"/>
                             <constraint firstItem="O5Q-7b-s0s" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="eSY-4m-otX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O5Q-7b-s0s" secondAttribute="bottom" id="kOo-wD-920"/>
-                            <constraint firstItem="LiS-CM-1fS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xuV-Z4-r6d"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Todo List" id="uJ3-6N-l4F"/>
+                    <navigationItem key="navigationItem" title="Todo List" id="uJ3-6N-l4F">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="B7b-OK-Tei">
+                            <connections>
+                                <action selector="addTodoButtonPressed:" destination="BYZ-38-t0r" id="FAr-Yx-Apq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="todoTableView" destination="O5Q-7b-s0s" id="OMS-cn-5Kn"/>
+                        <outlet property="topConstraint" destination="IIo-N6-7GS" id="btL-83-XKX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
