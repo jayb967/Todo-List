@@ -9,11 +9,14 @@
 #import "AppDelegate.h"
 @import UIKit;
 @import Firebase;
+@import WatchConnectivity;
+
+typedef void(^FirebaseCallback)(NSArray *allTodos);
 
 
 
 
-@interface AppDelegate ()
+@interface AppDelegate () <WCSessionDelegate>
 
 @end
 
@@ -25,9 +28,35 @@
     // Override point for customization after application launch.
     
     [FIRApp configure];
+    
+    [[WCSession defaultSession] setDelegate:self];
+    [[WCSession defaultSession] activateSession];
+    
     return YES;
 }
 
+-(void)startMonitoringTodoUpdates:(FirebaseCallback)callback{
+    FIRDatabaseReference *databaseReference = [[FIRDatabase database]reference];
+    
+    FIRUser *currentUser = [[FIRAuth auth] currentUser];
+    
+    FIRDatabaseReference *userReference = [[databaseReference child:@"users"] child:currentUser.uid];
+    //                                      this watches to value changes (FIRDataEventTypeValue)
+    [[userReference child:@"todos"] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        NSMutableArray *todoDictionaries = [[NSMutableArray alloc]init];
+        
+        for (FIRDataSnapshot *todoReference in snapshot.children) {
+            [todoDictionaries addObject:todoReference.value];
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            callback(todoDictionaries.copy);
+            
+        });
+        
+    }];
+    
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -93,15 +122,23 @@
 
 #pragma mark - Core Data Saving support
 
-- (void)saveContext {
-    NSManagedObjectContext *context = self.persistentContainer.viewContext;
-    NSError *error = nil;
-    if ([context hasChanges] && ![context save:&error]) {
-        // Replace this implementation with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@"Unresolved error %@, %@", error, error.userInfo);
-        abort();
-    }
+//- (void)saveContext {
+//    NSManagedObjectContext *context = self.persistentContainer.viewContext;
+//    NSError *error = nil;
+//    if ([context hasChanges] && ![context save:&error]) {
+//        // Replace this implementation with code to handle the error appropriately.
+//        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+//        NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+//        abort();
+//    }
+//}
+
+-(void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message replyHandler:(nonnull void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler{
+    //                      calls the method on top
+    [self startMonitoringTodoUpdates:^(NSArray *allTodos) {
+    //                  returning the allTodos array from the same method startmonitoring.....
+        replyHandler(@{@"todos": allTodos});
+    }];
 }
 
 @end

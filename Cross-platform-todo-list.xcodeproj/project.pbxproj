@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2818376F1EC57A9F005EA067 /* TodoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2818376E1EC57A9F005EA067 /* TodoDetailViewController.m */; };
+		281837721EC57C40005EA067 /* TVLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 281837711EC57C40005EA067 /* TVLoginVC.m */; };
 		281F500B1EC232BE000EC1E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F500A1EC232BE000EC1E2 /* main.m */; };
 		281F500E1EC232BE000EC1E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F500D1EC232BE000EC1E2 /* AppDelegate.m */; };
-		281F50111EC232BE000EC1E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50101EC232BE000EC1E2 /* ViewController.m */; };
 		281F50141EC232BE000EC1E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281F50121EC232BE000EC1E2 /* Main.storyboard */; };
 		281F50171EC232BE000EC1E2 /* Cross_platform_todo_list.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 281F50151EC232BE000EC1E2 /* Cross_platform_todo_list.xcdatamodeld */; };
 		281F50191EC232BE000EC1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281F50181EC232BE000EC1E2 /* Assets.xcassets */; };
@@ -32,7 +33,10 @@
 		281F50701EC3C43A000EC1E2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F506F1EC3C43A000EC1E2 /* LoginViewController.m */; };
 		281F50731EC3EF71000EC1E2 /* NewTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50721EC3EF71000EC1E2 /* NewTodoViewController.m */; };
 		281FED291EC440B300F5D5D4 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 281FED281EC440B300F5D5D4 /* Todo.m */; };
-		281FED2C1EC44C2200F5D5D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50101EC232BE000EC1E2 /* ViewController.m */; };
+		284CB3C41EC519A5004C5551 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281F50101EC232BE000EC1E2 /* ViewController.m */; };
+		284CB3C51EC519E3004C5551 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 281FED281EC440B300F5D5D4 /* Todo.m */; };
+		284CB3C61EC519E4004C5551 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 281FED281EC440B300F5D5D4 /* Todo.m */; };
+		284CB3C91EC52821004C5551 /* TodoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CB3C81EC52821004C5551 /* TodoTableViewCell.m */; };
 		6CD59B818D6B7B688B23FE9F /* libPods-Cross-platform-todo-list.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB693AD8DF01695E59ADA98 /* libPods-Cross-platform-todo-list.a */; };
 		767015D57A7BE025E9408CC6 /* libPods-WatchKit-todo-list Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 293AF20FAFABE73714985113 /* libPods-WatchKit-todo-list Extension.a */; };
 		81D7458D44408CCE5011D8E6 /* libPods-TV-todo-list.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F96140BC3B558B1B0BDC5BD /* libPods-TV-todo-list.a */; };
@@ -85,6 +89,10 @@
 		0E0A8878B9D1F088DAFDD2A7 /* Pods-Cross-platform-todo-list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cross-platform-todo-list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cross-platform-todo-list/Pods-Cross-platform-todo-list.debug.xcconfig"; sourceTree = "<group>"; };
 		10739AD619D6BADB3934BDD3 /* Pods-WatchKit-todo-list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKit-todo-list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKit-todo-list/Pods-WatchKit-todo-list.debug.xcconfig"; sourceTree = "<group>"; };
 		13B7E894B3565D18760713B3 /* libPods-WatchKit-todo-list.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchKit-todo-list.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2818376D1EC57A9F005EA067 /* TodoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoDetailViewController.h; sourceTree = "<group>"; };
+		2818376E1EC57A9F005EA067 /* TodoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoDetailViewController.m; sourceTree = "<group>"; };
+		281837701EC57C40005EA067 /* TVLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVLoginVC.h; sourceTree = "<group>"; };
+		281837711EC57C40005EA067 /* TVLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVLoginVC.m; sourceTree = "<group>"; };
 		281F50061EC232BE000EC1E2 /* Cross-platform-todo-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cross-platform-todo-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		281F500A1EC232BE000EC1E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		281F500C1EC232BE000EC1E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +136,8 @@
 		281F50721EC3EF71000EC1E2 /* NewTodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTodoViewController.m; sourceTree = "<group>"; };
 		281FED271EC440B300F5D5D4 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
 		281FED281EC440B300F5D5D4 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		284CB3C71EC52821004C5551 /* TodoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoTableViewCell.h; sourceTree = "<group>"; };
+		284CB3C81EC52821004C5551 /* TodoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoTableViewCell.m; sourceTree = "<group>"; };
 		293AF20FAFABE73714985113 /* libPods-WatchKit-todo-list Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchKit-todo-list Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44478CD3C75CDD73C6D490C3 /* Pods-TV-todo-list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV-todo-list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TV-todo-list/Pods-TV-todo-list.debug.xcconfig"; sourceTree = "<group>"; };
 		69745AE9CA9F7E9DDFA2BD1B /* Pods-WatchKit-todo-list Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKit-todo-list Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchKit-todo-list Extension/Pods-WatchKit-todo-list Extension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -249,8 +259,12 @@
 				281F50561EC246C2000EC1E2 /* AppDelegate.h */,
 				281F50571EC246C2000EC1E2 /* AppDelegate.m */,
 				281F505C1EC246C2000EC1E2 /* Main.storyboard */,
+				281837701EC57C40005EA067 /* TVLoginVC.h */,
+				281837711EC57C40005EA067 /* TVLoginVC.m */,
 				281F50651EC248BA000EC1E2 /* TVHomeViewController.h */,
 				281F50661EC248BA000EC1E2 /* TVHomeViewController.m */,
+				2818376D1EC57A9F005EA067 /* TodoDetailViewController.h */,
+				2818376E1EC57A9F005EA067 /* TodoDetailViewController.m */,
 				281F506A1EC3832D000EC1E2 /* Credentials.h */,
 				281F506B1EC38439000EC1E2 /* FirebaseAPI.h */,
 				281F506C1EC38439000EC1E2 /* FirebaseAPI.m */,
@@ -302,6 +316,8 @@
 			children = (
 				281F50121EC232BE000EC1E2 /* Main.storyboard */,
 				281F501A1EC232BE000EC1E2 /* LaunchScreen.storyboard */,
+				284CB3C71EC52821004C5551 /* TodoTableViewCell.h */,
+				284CB3C81EC52821004C5551 /* TodoTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -682,13 +698,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281F50111EC232BE000EC1E2 /* ViewController.m in Sources */,
+				284CB3C41EC519A5004C5551 /* ViewController.m in Sources */,
 				281F500E1EC232BE000EC1E2 /* AppDelegate.m in Sources */,
 				281F500B1EC232BE000EC1E2 /* main.m in Sources */,
 				281F50171EC232BE000EC1E2 /* Cross_platform_todo_list.xcdatamodeld in Sources */,
 				281F50701EC3C43A000EC1E2 /* LoginViewController.m in Sources */,
 				281F50731EC3EF71000EC1E2 /* NewTodoViewController.m in Sources */,
 				281FED291EC440B300F5D5D4 /* Todo.m in Sources */,
+				284CB3C91EC52821004C5551 /* TodoTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,8 +715,8 @@
 			files = (
 				281F503B1EC233B9000EC1E2 /* ExtensionDelegate.m in Sources */,
 				281F50381EC233B9000EC1E2 /* InterfaceController.m in Sources */,
-				281FED2C1EC44C2200F5D5D4 /* ViewController.m in Sources */,
 				281F504C1EC23F3D000EC1E2 /* TodoRowController.m in Sources */,
+				284CB3C61EC519E4004C5551 /* Todo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,8 +724,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284CB3C51EC519E3004C5551 /* Todo.m in Sources */,
+				2818376F1EC57A9F005EA067 /* TodoDetailViewController.m in Sources */,
 				281F50581EC246C2000EC1E2 /* AppDelegate.m in Sources */,
 				281F50551EC246C2000EC1E2 /* main.m in Sources */,
+				281837721EC57C40005EA067 /* TVLoginVC.m in Sources */,
 				281F50671EC248BA000EC1E2 /* TVHomeViewController.m in Sources */,
 				281F506D1EC38439000EC1E2 /* FirebaseAPI.m in Sources */,
 			);

@@ -11,7 +11,7 @@
 
 @implementation FirebaseAPI
 
-+(void)fetchAllTodos:(AllTodosCompletion)completion{
++(void)fetchAllTodos:(TodosCompletion)completion{
     //                                                                                                  ? is end of url and beginning of query string
     NSString *urlString = [NSString stringWithFormat:@"https://todo-list-e9f10.firebaseio.com/users.json?auth%@", APP_KEY];
     
@@ -23,9 +23,9 @@
         
         NSDictionary *rootObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
         
-//        NSLog(@"ROOT OBJECT:%@", rootObject);
+        NSLog(@"ROOT OBJECT:%@", rootObject);
         
-        NSMutableArray *allTodos = [[NSMutableArray alloc]inti];
+        NSMutableArray *allTodos = [[NSMutableArray alloc]init];
         //                                                   bypasses the keys to read all values in json
         for (NSDictionary *userTodosDictionary in [rootObject allValues]) {
             //
@@ -52,10 +52,9 @@
             
             //more quicker and lighweight
             dispatch_async(dispatch_get_main_queue(), ^{
-                completion(allTodos);
-            })
+                completion([allTodos copy]);
+            });
         }
-        
     }] resume];//resume is needed for data tasks to fire, aka start
     
     

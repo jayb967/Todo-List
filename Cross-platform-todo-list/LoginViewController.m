@@ -7,7 +7,8 @@
 //
 
 #import "LoginViewController.h"
-
+@import FirebaseAuth;
+ 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
@@ -24,8 +25,11 @@
 //    //signout user with this 
 //    NSError *signOutError;
 //    [[FIRAuth auth] signOut:&signOutError];
+    NSString *email = self.emailTextField.text;
+    NSString *password = self.passwordTextField.text;
     
-    [[FIRAuth auth] signInWithEmail:self.emailTextField.text password:self.passwordTextField.text completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+    
+    [[FIRAuth auth] signInWithEmail:email password:password completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
         if (error) {
             NSLog(@"Error signing in: %@", error.localizedDescription);
         }
@@ -37,7 +41,11 @@
     
 }
 - (IBAction)signupButtonPressed:(id)sender {
-    [FIRAuth auth] createUserWithEmail:self.emailTextField.text password:self.passwordTextField.text completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+    NSString *email = self.emailTextField.text;
+    NSString *password = self.passwordTextField.text;
+    
+    [[FIRAuth auth] createUserWithEmail:email password:password completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+        
         if (error) {
             NSLog(@"Error signing up user: %@", error.localizedDescription);
         }
@@ -45,7 +53,7 @@
             NSLog(@"Succesfully signed up: %@", user);
             //put somethin
         }
-    }
+    }];
     
 }
 

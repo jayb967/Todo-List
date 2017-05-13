@@ -12,8 +12,9 @@
 typedef void(^TodosCompletion)(NSArray<Todo *> *allTodos);
 
 
+
 @interface FirebaseAPI : NSObject
 
-+(void)fetchAllTodos:(AllTodosCompletion)completion;
++(void)fetchAllTodos:(TodosCompletion)completion;
 
 @end

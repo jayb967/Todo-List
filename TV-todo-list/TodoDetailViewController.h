@@ -1,14 +1,13 @@
 //
-//  LoginViewController.h
+//  TodoDetailViewController.h
 //  Cross-platform-todo-list
 //
-//  Created by Rio Balderas on 5/10/17.
+//  Created by Rio Balderas on 5/11/17.
 //  Copyright © 2017 Jay Balderas. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-
-@interface LoginViewController : UIViewController
+@interface TodoDetailViewController : UIViewController
 
 @end

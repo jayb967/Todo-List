@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "LoginViewController.h"
 #import "Todo.h"
-
+#import "TodoTableViewCell.h"
 @import FirebaseAuth;
+
 @import Firebase;
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -91,21 +92,25 @@
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_allTodos removeObjectAtIndex:indexPath.row];
+        NSLog(@"%@",self.allTodos);
+        [self.allTodos removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.allTodos.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    Todo *child = [self.allTodos objectAtIndex:indexPath.row];
+    TodoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", child.title];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", child.content];
+    Todo *currentCell = self.allTodos[indexPath.row];
+    
+    cell.titleCellLabel.text = currentCell.title;
+    cell.contentCellLabel.text = currentCell.content;
+    
     
     return cell;
 }
