@@ -9,6 +9,7 @@
 #import "InterfaceController.h"
 #import "TodoRowController.h"
 #import "Todo.h"
+@import WatchConnectivity;
 
 
 @interface InterfaceController ()
@@ -42,27 +43,59 @@
 //    for i in 0..self.allTodos.count{} this is the swift way to put it.
     
 }
-
--(NSArray<Todo *> *)allTodos{
-    Todo *firstTodo = [[Todo alloc]init];
-    firstTodo.title = @"First Todo";
-    firstTodo.content = @"This is a todo";
-    
-    Todo *secondTodo = [[Todo alloc]init];
-    secondTodo.title = @"First Todo";
-    secondTodo.content = @"This is a todo";
-    
-    Todo *thirdTodo = [[Todo alloc]init];
-    thirdTodo.title = @"First Todo";
-    thirdTodo.content = @"This is a todo";
-    
-    return @[firstTodo, secondTodo, thirdTodo];
-    
-}
+//feeds fake todos
+//-(NSArray<Todo *> *)allTodos{
+//    Todo *firstTodo = [[Todo alloc]init];
+//    firstTodo.title = @"First Todo";
+//    firstTodo.content = @"This is a todo";
+//    
+//    Todo *secondTodo = [[Todo alloc]init];
+//    secondTodo.title = @"First Todo";
+//    secondTodo.content = @"This is a todo";
+//    
+//    Todo *thirdTodo = [[Todo alloc]init];
+//    thirdTodo.title = @"First Todo";
+//    thirdTodo.content = @"This is a todo";
+//    
+//    return @[firstTodo, secondTodo, thirdTodo];
+//    
+//}
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    [[WCSession defaultSession] setDelegate:self];
+    [[WCSession defaultSession] activateSession];
+    
+    
+    // message parameter is where you would watn to hand the ios app new todo data to save to firebase
+    //empty dictionary (@{}) will force app to wati quietly in the background
+
+    
+    [[WCSession defaultSession] sendMessage:@{} replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
+        
+        NSArray *todoDictionaries = replyMessage[@"todos"];
+        
+        NSMutableArray *allTodos = [[NSMutableArray alloc]init];
+        
+        for (NSDictionary *todoObject in todoDictionaries) {
+            Todo *newTodo = [[Todo alloc]init];
+            
+            newTodo.title = todoObject[@"title"];//grabs the key (title)
+            newTodo.content = todoObject[@"content"];//grabs the key (content)
+            //assign any others here...
+            
+            [allTodos addObject:newTodo];
+        }
+        
+        self.allTodos = allTodos.copy;
+//        [self setupInterfaceTable];
+        
+    } errorHandler:^(NSError * _Nonnull error) {
+        
+        NSLog(@"%@", error.localizedDescription);
+        
+    }];
 }
 
 - (void)didDeactivate {

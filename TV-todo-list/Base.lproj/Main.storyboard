@@ -62,10 +62,57 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Todo List" id="bgg-Nf-HXz"/>
+                    <connections>
+                        <outlet property="tableView" destination="Qbw-pL-RCZ" id="IIZ-i9-wIj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2202" y="74"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="MzI-qz-zVk">
+            <objects>
+                <viewController storyboardIdentifier="TVLoginVC" id="bEQ-4N-KAu" customClass="TVLoginVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dl3-oA-uGJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="XhS-tR-rS5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I8h-RA-yMN">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8TG-6L-nKY">
+                                <rect key="frame" x="480" y="517" width="960" height="46"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k6-6L-kJU">
+                                <rect key="frame" x="840" y="663" width="240" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterButtonPressed:" destination="bEQ-4N-KAu" eventType="primaryActionTriggered" id="2Bj-uC-eO5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0k6-6L-kJU" firstAttribute="width" secondItem="8TG-6L-nKY" secondAttribute="width" multiplier="0.25" id="2dF-ut-niX"/>
+                            <constraint firstItem="0k6-6L-kJU" firstAttribute="centerX" secondItem="I8h-RA-yMN" secondAttribute="centerX" id="3TC-6O-hnu"/>
+                            <constraint firstItem="8TG-6L-nKY" firstAttribute="centerY" secondItem="I8h-RA-yMN" secondAttribute="centerY" id="Kod-na-d6E"/>
+                            <constraint firstItem="0k6-6L-kJU" firstAttribute="top" secondItem="8TG-6L-nKY" secondAttribute="bottom" constant="100" id="cbN-9S-V6Z"/>
+                            <constraint firstItem="8TG-6L-nKY" firstAttribute="width" secondItem="I8h-RA-yMN" secondAttribute="width" multiplier="0.5" id="vxr-iS-gWI"/>
+                            <constraint firstItem="8TG-6L-nKY" firstAttribute="centerX" secondItem="I8h-RA-yMN" secondAttribute="centerX" id="zOt-2h-maK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="8TG-6L-nKY" id="72B-9E-jpG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="er7-iy-smy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470" y="1763"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VDV-sm-sje">

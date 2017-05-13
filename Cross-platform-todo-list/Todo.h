@@ -12,5 +12,8 @@
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *content;
+@property(strong, nonatomic) NSString *email;
+@property(strong, nonatomic) NSString *uid;
+@property(nonatomic) BOOL isCompleted;
 
 @end

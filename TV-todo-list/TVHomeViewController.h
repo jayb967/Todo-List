@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TVLoginVC.h"
 
 @interface TVHomeViewController : UIViewController
+
+@property (strong, nonatomic) TVLoginVC *userEmail;
 
 @end

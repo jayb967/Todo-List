@@ -7,6 +7,8 @@
 //
 
 #import "NewTodoViewController.h"
+#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
 @import Firebase;
 @import FirebaseAuth;
@@ -36,8 +38,11 @@
     [[newTodoReference child:@"title"] setValue:self.titleTextField.text];
     [[newTodoReference child:@"content"] setValue:self.contentTextField.text];
     
-    
+    ViewController *topContraint = [[ViewController alloc]init];
+    topContraint.topConstraint.constant = -150;
+
 }
+
 
 
 @end
